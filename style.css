@@ -1,259 +1,30 @@
-/* Gaya Umum */
+/* Gaya Neobrutalisme */
 body {
-  font-family: 'Roboto Mono', monospace;
-  margin: 0;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.5;
+    font-family: monospace; /* Gunakan font monospace */
+    background-color: #f0f0f0; 
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 10px;
+    border: 2px solid black; /* Berikan border tebal */
+    padding: 20px;
 }
 
-/* Tipografi */
 h1, h2, h3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
-h1 {
-  font-size: 1.8rem; /* Ukuran font diperkecil */
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 1; /* Samakan line-height dengan hamburger */
+a {
+    color: blue; /* Warna mencolok untuk link */
+    text-decoration: underline;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+/* Warna-warni */
+.bg-primary {
+    background-color: #FF6347 !important; /* Contoh warna */
 }
 
-/* Header */
-header {
-  background-color: #fff;
-  padding: 10px 0;
-  border-bottom: 2px solid #000;
+.bg-secondary {
+    background-color: #4682B4 !important; /* Contoh warna */
 }
 
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch; /* Stretch agar tinggi navbar sama dengan tinggi h1 */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-header nav a:hover {
-  color: #000;
-}
-
-/* Navbar */
-#navbar {
-  position: relative; /* Agar #menu diposisikan relatif terhadap #navbar */
-  overflow: hidden; /* Sembunyikan overflow #menu saat di luar layar */
-}
-
-#menu {
-  /* ... (styling lainnya) ... */
-  position: fixed; /* Agar tetap di posisi saat di-scroll */
-  top: 0;
-  right: 0; /* Geser ke kanan */
-  height: 100%;
-  width: 80%; /* Sesuaikan lebar sidebar */
-  background-color: #fff;
-  transform: translateX(100%); /* Sembunyikan di luar layar */
-  transition: transform 0.3s ease; /* Tambahkan transisi */
-}
-
-#navbar.show #menu {
-  transform: translateX(0); /* Tampilkan saat #navbar memiliki class show */
-}
-
-/* Hamburger Menu */
-#hamburger-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  position: relative;
-  z-index: 10;
-  line-height: 1; /* Samakan line-height dengan h1 */
-}
-
-.hamburger-icon {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #222;
-  margin: 5px 0;
-  transition: transform 0.3s ease;
-}
-
-#hamburger-button.show .hamburger-icon:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-#hamburger-button.show .hamburger-icon:nth-child(2) {
-  opacity: 0;
-}
-
-#hamburger-button.show .hamburger-icon:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Hapus Media Query untuk Responsiveness */
-
-/* Hero Section */
-#hero {
-  background-color: #f9f9f9;
-  text-align: center;
-  padding: 80px 0;
-}
-
-#hero h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-/* About Section */
-#about {
-  background-color: #fff;
-  text-align: center;
-  padding: 40px 0;
-}
-
-#about .profile {
-  margin-bottom: 30px;
-}
-
-#about img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-/* Social Links */
-.social-links {
-  margin-bottom: 20px;
-}
-
-.social-links a {
-  display: inline-block;
-  margin: 0 10px;
-  font-size: 20px;
-  color: #222;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #000;
-}
-
-/* Skills Section */
-#skills {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-.skills-list {
-  display: flex;
-  justify-content: space-around;
-}
-
-.skills-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Experience Section */
-#experience {
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-.experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.experience {
-  border: 2px solid #000;
-  padding: 20px;
-}
-
-.company,
-.duration {
-  font-style: italic;
-}
-
-/* Education Section */
-#education {
-  background-color: #f9f9f9;
-  padding: 40px 0;
-}
-
-.education-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.education {
-  border: 2px solid #000;
-  padding: 20px;
-}
-
-.university,
-.year {
-  font-style: italic;
-}
-
-/* Contact Section */
-#contact {
-  background-color: #fff;
-  padding: 40px 0;
-}
-
-#contact .form-group {
-  margin-bottom: 20px;
-}
-
-#contact label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #000;
-  box-sizing: border-box;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  border-top: 2px solid #000;
-}
+/* Dan seterusnya... */
