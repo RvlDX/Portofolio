@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const hamburgerButton = document.getElementById('hamburger-button');
-  const menu = document.getElementById('menu');
+  const navbar = document.getElementById('navbar');
 
   hamburgerButton.addEventListener('click', () => {
-    hamburgerButton.classList.toggle('show'); // Tambahkan class 'show' ke tombol
-    menu.classList.toggle('show');
+    hamburgerButton.classList.toggle('show');
+    navbar.classList.toggle('show');
   });
 });
