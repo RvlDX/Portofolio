@@ -1,195 +1,200 @@
-/* Gaya Umum */
+/*  Gaya Umum  */
 body {
-    font-family: 'Roboto Mono', monospace;
-    margin: 0;
-    background-color: #f4f4f4;
-    color: #222;
-    line-height: 1.6;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
+/*  Tipografi  */
 h1, h2, h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-/* Header */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/*  Header  */
 header {
-    background-color: #fff;
-    padding: 20px 0;
-    border-bottom: 2px solid #000;
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 2px solid #000;
 }
 
 header nav ul {
-    display: flex; /* Menggunakan flexbox */
-    justify-content: space-around;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header nav li {
-    /* Tidak perlu width lagi */
+header nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-header a {
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
-    transition: color 0.3s ease;
+header nav a:hover {
+  color: #000;
 }
 
-header a:hover {
-    color: #000;
-}
-
-/* Section */
-section {
-    padding: 40px 0;
-}
-
-/* Hero Section */
+/*  Hero Section  */
 #hero {
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 80px 0; /* Tinggi hero section */
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 80px 0;
 }
 
 #hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-/* About */
+/*  About Section  */
 #about {
-    background-color: #fff;
-    text-align: center;
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0;
 }
 
 #about .profile {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
+/*  Social Links  */
 .social-links {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
-    color: #222;
-    transition: color 0.3s ease;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #222;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #000;
+  color: #000;
 }
 
-/* Skills */
+/*  Skills Section  */
 #skills {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
+  padding: 40px 0;
 }
 
 .skills-list {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .skills-list ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
-/* Experience */
+/*  Experience Section  */
 #experience {
-    background-color: #fff;
+  background-color: #fff;
+  padding: 40px 0;
 }
 
 .experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .experience {
-    border: 2px solid #000;
-    padding: 20px;
+  border: 2px solid #000;
+  padding: 20px;
 }
 
-.company, .duration {
-    font-style: italic;
+.company,
+.duration {
+  font-style: italic;
 }
 
-/* Education */
+/*  Education Section  */
 #education {
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .education {
-    border: 2px solid #000;
-    padding: 20px;
+  border: 2px solid #000;
+  padding: 20px;
 }
 
-.university, .year {
-    font-style: italic;
+.university,
+.year {
+  font-style: italic;
 }
 
-/* Contact */
+/*  Contact Section  */
 #contact {
-    background-color: #fff;
+  background-color: #fff;
+  padding: 40px 0;
 }
 
 #contact .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 #contact input,
 #contact textarea {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  box-sizing: border-box;
 }
 
-/* Footer */
+/*  Footer  */
 footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #000;
-}
-
-/* Gaya Neobrutalisme */
-h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #000;
 }
