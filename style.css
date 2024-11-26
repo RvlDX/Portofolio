@@ -41,7 +41,7 @@ header {
 header nav ul {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /*  Ubah dari center ke flex-start  */
+  align-items: stretch;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -60,7 +60,9 @@ header nav a:hover {
 
 /* Hamburger Menu */
 #hamburger-button {
-  display: none; /* Sembunyikan di layar besar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
