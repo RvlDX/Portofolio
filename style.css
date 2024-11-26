@@ -106,3 +106,26 @@ li {
     margin-right: auto; /*  Memberi margin otomatis di kanan */
     margin-bottom: 20px; /*  Memberi jarak antara gambar dengan teks di bawahnya */
 }
+
+*/Style untuk dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212; 
+    }
+
+    .container {
+        background-color: #222222; 
+        color: white; 
+    }
+
+    .btn {
+        color: black; /* Ubah warna teks tombol menjadi hitam */
+    }
+
+    li {
+        background-color: #222222; /* Ubah latar belakang item list */
+        color: white; /* Ubah warna teks item list */
+    }
+
+    /* ... sesuaikan style lainnya untuk dark mode ... */
+}
