@@ -40,8 +40,8 @@ header {
 
 header nav ul {
   display: flex;
-  justify-content: space-between; /* Ratakan item di antara ujung kiri dan kanan */
-  align-items: center; /* Sejajarkan item secara vertikal */
+  justify-content: space-between; /* Ini akan meratakan item pertama ke kiri dan item terakhir ke kanan */
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
