@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - John Doe</title>
+    <title>Portofolio - Muhammad Awaluddin Azhari Ihsan</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>John Doe</h1>
+            <h1>Muhammad Awaluddin Azhari Ihsan</h1>
             <nav>
                 <ul>
                     <li><a href="#about">Tentang</a></li>
-                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#experience">Pengalaman</a></li>
+                    <li><a href="#education">Pendidikan</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
             </nav>
@@ -23,30 +25,81 @@
 
     <section id="about">
         <div class="container">
-            <h2>Tentang Saya</h2>
-            <p>Saya seorang web developer yang bersemangat dengan desain dan teknologi. Saya memiliki pengalaman dalam membangun website responsif dan user-friendly dengan HTML, CSS, dan JavaScript. Saya selalu tertarik untuk mempelajari hal baru dan mengembangkan skill saya.</p>
-            <p>Saya memiliki ketertarikan pada desain minimalis dan neobrutalisme. Saya percaya bahwa desain yang sederhana dan fungsional adalah kunci untuk menciptakan pengalaman pengguna yang baik.</p>
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Foto Profil"> 
+                <h2>Web Developer</h2> 
+                <p>Berpengalaman dalam pengembangan web dengan fokus pada front-end dan back-end. Tertarik untuk membangun aplikasi web yang inovatif dan user-friendly.</p>
+                <div class="social-links">
+                    <a href="mailto:emailmu@example.com"><i class="bi bi-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/your-linkedin-profile"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/your-instagram-profile"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/your-github-profile"><i class="bi bi-github"></i></a>
+                </div>
+                <p class="location"><i class="bi bi-geo-alt"></i> Jakarta</p> 
+            </div>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="skills">
         <div class="container">
-            <h2>Proyek</h2>
-            <div class="project-grid">
-                <div class="project">
-                    <img src="images/project1.jpg" alt="Proyek 1">
-                    <h3>Website Company Profile</h3>
-                    <p>Membangun website company profile untuk perusahaan startup di bidang teknologi.</p>
+            <h2>Keahlian</h2>
+            <div class="skills-list">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>SQL</li>
+                </ul>
+
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Komunikasi</li>
+                    <li>Kerja Sama Tim</li>
+                    <li>Problem-solving</li>
+                    <li>Adaptasi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Pengalaman</h2>
+            <div class="experience-list">
+                <div class="experience">
+                    <h3>Front-End Developer</h3>
+                    <p class="company">PT. XYZ</p>
+                    <p class="duration">2021 - Sekarang</p>
+                    <ul>
+                        <li>Mengembangkan dan memelihara antarmuka pengguna website.</li>
+                        <li>Mengimplementasikan desain responsif.</li>
+                        <li>Bekerja sama dengan tim desainer dan back-end developer.</li>
+                    </ul>
                 </div>
-                <div class="project">
-                    <img src="images/project2.jpg" alt="Proyek 2">
-                    <h3>Landing Page Aplikasi Mobile</h3>
-                    <p> Mendesain dan mengembangkan landing page untuk aplikasi mobile di bidang kesehatan.</p>
+                <div class="experience">
+                    <h3>Web Developer Intern</h3>
+                    <p class="company">Startup ABC</p>
+                    <p class="duration">2020</p>
+                    <ul>
+                        <li>Membantu dalam pengembangan website perusahaan.</li>
+                        <li>Mempelajari teknologi baru dan framework.</li>
+                    </ul>
                 </div>
-                <div class="project">
-                    <img src="images/project3.jpg" alt="Proyek 3">
-                    <h3>Website E-commerce</h3>
-                    <p>Mengembangkan website e-commerce untuk toko online yang menjual produk fashion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <div class="education-list">
+                <div class="education">
+                    <h3>S1 Teknik Informatika</h3>
+                    <p class="university">Universitas [Nama Universitas]</p>
+                    <p class="year">2017 - 2021</p>
                 </div>
             </div>
         </div>
@@ -75,7 +128,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 John Doe</p>
+            <p>&copy; 2023 Muhammad Awaluddin Azhari Ihsan</p>
         </div>
     </footer>
 
