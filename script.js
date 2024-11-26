@@ -1,17 +1,22 @@
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
+// Sembunyikan semua section kecuali "Home" saat halaman dimuat
+sections.forEach(section => {
+  if (section.id !== 'home') {
+    section.style.display = 'none';
+  }
+});
+
 navLinks.forEach(link => {
   link.addEventListener('click', (event) => {
-    event.preventDefault(); // Mencegah perilaku default link
+    event.preventDefault();
 
-    // Sembunyikan semua section
     sections.forEach(section => {
       section.style.display = 'none';
     });
 
-    // Tampilkan section yang sesuai dengan link yang diklik
-    const targetId = link.getAttribute('href'); // Ambil nilai href (misalnya: #pendidikan)
+    const targetId = link.getAttribute('href');
     const targetSection = document.querySelector(targetId);
     targetSection.style.display = 'block';
   });
