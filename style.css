@@ -1,6 +1,6 @@
 /* Gaya Umum */
 body {
-    font-family: 'Roboto Mono', monospace; 
+    font-family: 'Roboto Mono', monospace;
     margin: 0;
     background-color: #f4f4f4;
     color: #222;
@@ -25,15 +25,15 @@ header {
 }
 
 header nav ul {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-around;
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center; /* Navbar simpel, rata tengah */
 }
 
 header nav li {
-    display: inline-block;
-    margin: 0 15px; /* Spasi antar link */
+    /* Tidak perlu width lagi */
 }
 
 header a {
@@ -52,10 +52,22 @@ section {
     padding: 40px 0;
 }
 
+/* Hero Section */
+#hero {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 0; /* Tinggi hero section */
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
 /* About */
 #about {
     background-color: #fff;
-    text-align: center; 
+    text-align: center;
 }
 
 #about .profile {
@@ -63,10 +75,10 @@ section {
 }
 
 #about img {
-    width: 150px; 
+    width: 150px;
     height: 150px;
-    border-radius: 50%; 
-    object-fit: cover; 
+    border-radius: 50%;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
@@ -108,7 +120,7 @@ section {
 
 .experience-list {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -140,60 +152,6 @@ section {
     background-color: #fff;
 }
 
-#contact label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #000;
-    box-sizing: border-box;
-}
-
-#contact button {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #222;
-}
-
-/* Footer */
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #000;
-}
-
-/* Gaya Neobrutalisme */
-h1 {
-    font-size: 2.5rem; /* Ukuran font h1 dikecilkan */
-    font-weight: 900;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center; /* Judul di tengah */
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Contact Form */
 #contact .form-group {
     margin-bottom: 20px;
 }
@@ -212,3 +170,26 @@ h2 {
     box-sizing: border-box;
 }
 
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #000;
+}
+
+/* Gaya Neobrutalisme */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
