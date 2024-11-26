@@ -6,13 +6,15 @@ body {
 
 .container {
     border: 2px solid black; 
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 20px; 
-    background-color: white; /* Latar belakang putih untuk semua container */
+    background-color: white; 
 }
 
 h1, h2, h3 {
     font-weight: bold;
+    margin-bottom: 20px; 
+    text-align: left; 
 }
 
 a {
@@ -20,54 +22,36 @@ a {
     text-decoration: underline;
 }
 
+p {
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
 /* Styling untuk tombol */
 .btn {
     border: 2px solid black !important; 
     font-weight: bold;
     padding: 15px 30px; 
-    display: block; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     margin-bottom: 10px; 
-    text-align: center;
     color: white; 
 }
 
-/*  Hilangkan dekorasi link di dalam tombol */
 .btn a {
     text-decoration: none; 
 }
 
 /* Warna tombol */
-.btn-github {
-    background-color: #007bff !important; 
-}
-
-.btn-linkedin {
-    background-color: #0077b5 !important; 
-}
-
-.btn-facebook {
-    background-color: #3b5998 !important;
-}
-
-.btn-instagram {
-    background-color: #e4405f !important; 
-}
-
-.btn-telegram {
-    background-color: #0088cc !important; 
-}
-
-.btn-hackerrank {
-    background-color: #2ec866 !important;
-}
-
-.btn-codewars {
-    background-color: #b91d19 !important; 
-}
-
-.btn-whatsapp {
-    background-color: #25D366 !important;
-}
+.btn-github { background-color: #007bff !important; }
+.btn-linkedin { background-color: #0077b5 !important; }
+.btn-facebook { background-color: #3b5998 !important; }
+.btn-instagram { background-color: #e4405f !important; }
+.btn-telegram { background-color: #0088cc !important; }
+.btn-hackerrank { background-color: #2ec866 !important; }
+.btn-codewars { background-color: #b91d19 !important; }
+.btn-whatsapp { background-color: #25D366 !important; }
 
 .btn.disabled, .btn:disabled {
     opacity: 0.65; 
@@ -80,20 +64,20 @@ a {
 
 /* Styling untuk list */
 ul {
-    list-style: none; /* Hilangkan bullet point */
+    list-style: none; 
     padding: 0;
+    padding-left: 20px; 
 }
 
 li {
     margin-bottom: 10px; 
-    border: 2px solid black; /* Tambahkan border pada setiap item list */
+    border: 2px solid black;
     padding: 10px;
-    background-color: #f0f0f0; /* Latar belakang abu-abu muda untuk item list */
+    background-color: #f0f0f0; 
 }
 
-/* Styling untuk section */
 #home, #pendidikan, #pengalaman, #skill {
-    background-color: white; /* Latar belakang putih */
+    background-color: white; 
 }
 
 .profile-pic {
@@ -101,13 +85,13 @@ li {
     height: 200px; 
     border-radius: 50%; 
     object-fit: cover; 
-    display: block; /*  Membuat gambar menjadi block element */
-    margin-left: auto;  /*  Memberi margin otomatis di kiri */
-    margin-right: auto; /*  Memberi margin otomatis di kanan */
-    margin-bottom: 20px; /*  Memberi jarak antara gambar dengan teks di bawahnya */
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto; 
+    margin-bottom: 20px; 
 }
 
-*/Style untuk dark mode */
+/* Style untuk dark mode */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #121212; 
@@ -116,16 +100,25 @@ li {
     .container {
         background-color: #222222; 
         color: white; 
+        border-color: white; /* Ubah warna border container */ 
+    }
+
+    h1, h2, h3 {
+        color: white; /* Ubah warna teks heading */
+    }
+
+    a {
+        color: lightblue; /* Ubah warna link */
     }
 
     .btn {
-        color: black; /* Ubah warna teks tombol menjadi hitam */
+        color: black; 
+        border-color: white; /* Ubah warna border tombol */
     }
 
     li {
-        background-color: #222222; /* Ubah latar belakang item list */
-        color: white; /* Ubah warna teks item list */
+        background-color: #222222; 
+        color: white; 
+        border-color: white; /* Ubah warna border item list */ 
     }
-
-    /* ... sesuaikan style lainnya untuk dark mode ... */
 }
