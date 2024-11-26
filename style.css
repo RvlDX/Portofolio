@@ -23,7 +23,7 @@ h1 {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 3px;
-  line-height: 1;
+  line-height: 1; /* Samakan line-height dengan hamburger */
 }
 
 h2 {
@@ -41,7 +41,7 @@ header {
 header nav ul {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: stretch; /* Stretch agar tinggi navbar sama dengan tinggi h1 */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -58,6 +58,28 @@ header nav a:hover {
   color: #000;
 }
 
+/* Navbar */
+#navbar {
+  position: relative; /* Agar #menu diposisikan relatif terhadap #navbar */
+  overflow: hidden; /* Sembunyikan overflow #menu saat di luar layar */
+}
+
+#menu {
+  /* ... (styling lainnya) ... */
+  position: fixed; /* Agar tetap di posisi saat di-scroll */
+  top: 0;
+  right: 0; /* Geser ke kanan */
+  height: 100%;
+  width: 80%; /* Sesuaikan lebar sidebar */
+  background-color: #fff;
+  transform: translateX(100%); /* Sembunyikan di luar layar */
+  transition: transform 0.3s ease; /* Tambahkan transisi */
+}
+
+#navbar.show #menu {
+  transform: translateX(0); /* Tampilkan saat #navbar memiliki class show */
+}
+
 /* Hamburger Menu */
 #hamburger-button {
   display: flex;
@@ -69,8 +91,7 @@ header nav a:hover {
   padding: 0;
   position: relative;
   z-index: 10;
-  line-height: 1;
-  align-self: center; /* Sejajarkan dengan teks */
+  line-height: 1; /* Samakan line-height dengan h1 */
 }
 
 .hamburger-icon {
@@ -94,33 +115,7 @@ header nav a:hover {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Media Query untuk Responsiveness */
-@media (max-width: 768px) {
-  #hamburger-button {
-    display: block; /* Tampilkan di layar kecil */
-  }
-
-  #menu {
-    display: none; /* Sembunyikan menu */
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 100%; /* Posisikan di bawah navbar */
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    border-top: 2px solid #000;
-    z-index: 9;
-  }
-
-  #menu.show {
-    display: flex; /* Tampilkan menu ketika tombol diklik */
-  }
-
-  header nav li {
-    margin: 10px 0;
-  }
-}
+/* Hapus Media Query untuk Responsiveness */
 
 /* Hero Section */
 #hero {
