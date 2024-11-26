@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang - RevolverDX</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - RevolverDX</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>RevolverDX</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="about.html">Tentang</a></li>
-                    <li><a href="skills.html">Keahlian</a></li>
-                    <li><a href="experience.html">Pengalaman</a></li>
-                    <li><a href="education.html">Pendidikan</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>RevolverDX</h1>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="skills.html">Keahlian</a></li>
+          <li><a href="experience.html">Pengalaman</a></li>
+          <li><a href="education.html">Pendidikan</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+        <button id="hamburger-button">
+          <span class="hamburger-icon"></span>
+          <span class="hamburger-icon"></span>
+          <span class="hamburger-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Selamat Datang di Portofolio Saya</h2>
-            <p>Saya seorang web developer yang bersemangat dengan desain dan teknologi. Saya memiliki pengalaman dalam membangun website responsif dan user-friendly.</p>
-        </div>
-    </section>
+  <section id="hero">
+    <div class="container">
+      <h2>Selamat Datang di Portofolio Saya</h2>
+      <p>Saya seorang web developer yang bersemangat dengan desain dan teknologi. Saya memiliki pengalaman dalam membangun website responsif dan user-friendly.</p>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 RevolverDX</p>
-        </div>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 RevolverDX</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const menu = document.getElementById('menu');
+
+    hamburgerButton.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
 
 </body>
 </html>
