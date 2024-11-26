@@ -24,7 +24,7 @@ h1 {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-align: center;
+  /* text-align: center; Hapus center agar teks rata kiri */
 }
 
 h2 {
@@ -41,7 +41,8 @@ header {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Ratakan item di antara ujung kiri dan kanan */
+  align-items: center; /* Sejajarkan item secara vertikal */
   list-style: none;
   margin: 0;
   padding: 0;
