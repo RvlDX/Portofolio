@@ -21,9 +21,9 @@ h1, h2, h3 {
 h1 {
   font-size: 1.8rem; /* Ukuran font diperkecil */
   font-weight: 900;
-  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  line-height: 1;
 }
 
 h2 {
@@ -67,6 +67,7 @@ header nav a:hover {
   padding: 0;
   position: relative;
   z-index: 10;
+  line-height: 1;
   align-self: center; /* Sejajarkan dengan teks */
 }
 
