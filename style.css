@@ -126,9 +126,13 @@ li {
   height: 100px;
 }
 
-
 .navbar-nav {
   margin-top: 10px;
+}
+
+.navbar-brand {
+ font-weight: bold;
+ text-align: left;
 }
 
 element {
