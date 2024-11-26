@@ -122,6 +122,11 @@ li {
     }
 }
 
+.navbar {
+  height: 50px;
+}
+
+
 .navbar-nav {
   margin-top: 10px;
 }
