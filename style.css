@@ -40,8 +40,8 @@ header {
 
 header nav ul {
   display: flex;
-  justify-content: space-between; /* Ini akan meratakan item pertama ke kiri dan item terakhir ke kanan */
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start; /*  Ubah dari center ke flex-start  */
   list-style: none;
   margin: 0;
   padding: 0;
