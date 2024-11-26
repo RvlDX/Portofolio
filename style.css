@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    border: 2px solid black; 
+    border: 2px solid black !important; 
     padding: 20px;
     margin-bottom: 20px; 
     background-color: white; 
@@ -17,7 +17,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: blue; 
+    color: blue !important; 
     text-decoration: underline;
 }
 
@@ -35,7 +35,7 @@ p {
     align-items: center; 
     justify-content: center; 
     margin-bottom: 10px; 
-    color: white; 
+    color: white !important; 
 }
 
 .btn a {
@@ -70,13 +70,13 @@ ul {
 
 li {
     margin-bottom: 10px; 
-    border: 2px solid black;
+    border: 2px solid black !important;
     padding: 10px;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0 !important; 
 }
 
 #home, #pendidikan, #pengalaman, #skill {
-    background-color: white; 
+    background-color: white !important; 
 }
 
 .profile-pic {
@@ -93,32 +93,32 @@ li {
 /* Style untuk dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121212; 
+        background-color: #121212 !important; 
     }
 
     .container {
-        background-color: #222222; 
+        background-color: #222222 !important; 
         color: white; 
-        border-color: white; /* Ubah warna border container */ 
+        border-color: white !important; /* Ubah warna border container */ 
     }
 
     h1, h2, h3 {
-        color: white; /* Ubah warna teks heading */
+        color: white !important; /* Ubah warna teks heading */
     }
 
     a {
-        color: lightblue; /* Ubah warna link */
+        color: lightblue !important; /* Ubah warna link */
     }
 
     .btn {
-        color: black; 
-        border-color: white; /* Ubah warna border tombol */
+        color: black !important; 
+        border-color: white !important; /* Ubah warna border tombol */
     }
 
     li {
-        background-color: #222222; 
-        color: white; 
-        border-color: white; /* Ubah warna border item list */ 
+        background-color: #222222 !important; 
+        color: white !important; 
+        border-color: white !important; /* Ubah warna border item list */ 
     }
 }
 
