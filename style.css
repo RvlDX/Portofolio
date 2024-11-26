@@ -6,13 +6,15 @@ body {
 
 .container {
     border: 2px solid black; 
-    padding: 20px;
+    padding: 30px; /* Tambahkan padding */
     margin-bottom: 20px; 
-    background-color: white; /* Latar belakang putih untuk semua container */
+    background-color: white; 
 }
 
 h1, h2, h3 {
     font-weight: bold;
+    margin-bottom: 20px; /*  Tambahkan margin di bawah heading */
+    text-align: left; /* Ratakan teks heading ke kiri */
 }
 
 a {
@@ -20,12 +22,19 @@ a {
     text-decoration: underline;
 }
 
+p {
+    margin-bottom: 15px; /*  Tambahkan margin di bawah paragraf */
+    text-align: left; /*  Ratakan teks paragraf ke kiri */
+}
+
 /* Styling untuk tombol */
 .btn {
     border: 2px solid black !important; 
     font-weight: bold;
     padding: 15px 30px; 
-    display: block; 
+    display: flex; /*  Gunakan flexbox untuk mengatur perataan vertikal */
+    align-items: center; /*  Ratakan konten tombol secara vertikal */
+    justify-content: center; /*  Ratakan konten tombol secara horizontal */
     margin-bottom: 10px; 
     text-align: center;
     color: white; 
@@ -80,20 +89,21 @@ a {
 
 /* Styling untuk list */
 ul {
-    list-style: none; /* Hilangkan bullet point */
+    list-style: none; 
     padding: 0;
+    padding-left: 20px; /*  Tambahkan padding di sebelah kiri list */
 }
 
 li {
     margin-bottom: 10px; 
-    border: 2px solid black; /* Tambahkan border pada setiap item list */
+    border: 2px solid black;
     padding: 10px;
-    background-color: #f0f0f0; /* Latar belakang abu-abu muda untuk item list */
+    background-color: #f0f0f0; 
 }
 
 /* Styling untuk section */
 #home, #pendidikan, #pengalaman, #skill {
-    background-color: white; /* Latar belakang putih */
+    background-color: white; 
 }
 
 .profile-pic {
@@ -101,8 +111,8 @@ li {
     height: 200px; 
     border-radius: 50%; 
     object-fit: cover; 
-    display: block; /*  Membuat gambar menjadi block element */
-    margin-left: auto;  /*  Memberi margin otomatis di kiri */
-    margin-right: auto; /*  Memberi margin otomatis di kanan */
-    margin-bottom: 20px; /*  Memberi jarak antara gambar dengan teks di bawahnya */
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto; 
+    margin-bottom: 20px; 
 }
