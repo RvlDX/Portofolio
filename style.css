@@ -95,3 +95,14 @@ li {
 #home, #pendidikan, #pengalaman, #skill {
     background-color: white; /* Latar belakang putih */
 }
+
+.profile-pic {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    display: block; /*  Membuat gambar menjadi block element */
+    margin-left: auto;  /*  Memberi margin otomatis di kiri */
+    margin-right: auto; /*  Memberi margin otomatis di kanan */
+    margin-bottom: 20px; /*  Memberi jarak antara gambar dengan teks di bawahnya */
+}
