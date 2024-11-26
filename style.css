@@ -122,14 +122,7 @@ li {
     }
 }
 
-/*  ... CSS lainnya ...  */
-
-.navbar-nav { /*  Atau  selector  CSS  yang  sesuai  dengan  elemen  `<ul>`  menu  kamu  */
-  margin-top: 10px; /*  Sesuaikan  nilai  ini  dengan  jarak  yang  diinginkan  */
+.navbar-nav {
+  margin-top: 10px;
 }
 
-
-.header, .footer {
-  height: 50px; /* Sesuaikan nilai ini dengan tinggi header yang diinginkan */
-  /* Tambahkan properti CSS lain yang dibutuhkan untuk header dan footer */
-}
