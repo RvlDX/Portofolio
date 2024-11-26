@@ -1,4 +1,4 @@
-/*  Gaya Umum  */
+/* Gaya Umum */
 body {
   font-family: 'Roboto Mono', monospace;
   margin: 0;
@@ -13,7 +13,7 @@ body {
   padding: 0 20px;
 }
 
-/*  Tipografi */
+/* Tipografi */
 h1, h2, h3 {
   font-weight: bold;
 }
@@ -32,7 +32,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/*  Header  */
+/* Header */
 header {
   background-color: #fff;
   padding: 20px 0;
@@ -58,7 +58,68 @@ header nav a:hover {
   color: #000;
 }
 
-/*  Hero Section  */
+
+/* Hamburger Menu */
+#hamburger-button {
+  display: none; /* Sembunyikan di layar besar */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 10; /* Pastikan tombol di atas elemen lain */
+}
+
+.hamburger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #222;
+  margin: 5px 0;
+  transition: transform 0.3s ease; /* Tambahkan transisi */
+}
+
+#hamburger-button.show .hamburger-icon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#hamburger-button.show .hamburger-icon:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-button.show .hamburger-icon:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Media Query untuk Responsiveness */
+@media (max-width: 768px) {
+  #hamburger-button {
+    display: block; /* Tampilkan di layar kecil */
+  }
+
+  #menu {
+    display: none; /* Sembunyikan menu */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%; /* Posisikan di bawah navbar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 2px solid #000;
+    z-index: 9; /* Pastikan menu di bawah tombol */
+  }
+
+  #menu.show {
+    display: flex; /* Tampilkan menu ketika tombol diklik */
+  }
+
+  header nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Hero Section */
 #hero {
   background-color: #f9f9f9;
   text-align: center;
@@ -70,7 +131,7 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 
-/*  About Section  */
+/* About Section */
 #about {
   background-color: #fff;
   text-align: center;
@@ -89,7 +150,7 @@ header nav a:hover {
   margin-bottom: 20px;
 }
 
-/*  Social Links  */
+/* Social Links */
 .social-links {
   margin-bottom: 20px;
 }
@@ -106,7 +167,7 @@ header nav a:hover {
   color: #000;
 }
 
-/*  Skills Section  */
+/* Skills Section */
 #skills {
   background-color: #f9f9f9;
   padding: 40px 0;
@@ -122,7 +183,7 @@ header nav a:hover {
   padding: 0;
 }
 
-/*  Experience Section  */
+/* Experience Section */
 #experience {
   background-color: #fff;
   padding: 40px 0;
@@ -144,7 +205,7 @@ header nav a:hover {
   font-style: italic;
 }
 
-/*  Education Section  */
+/* Education Section */
 #education {
   background-color: #f9f9f9;
   padding: 40px 0;
@@ -166,7 +227,7 @@ header nav a:hover {
   font-style: italic;
 }
 
-/*  Contact Section  */
+/* Contact Section */
 #contact {
   background-color: #fff;
   padding: 40px 0;
@@ -190,7 +251,7 @@ header nav a:hover {
   box-sizing: border-box;
 }
 
-/*  Footer  */
+/* Footer */
 footer {
   background-color: #222;
   color: #fff;
@@ -198,48 +259,3 @@ footer {
   padding: 20px 0;
   border-top: 2px solid #000;
 }
-
-/* Hamburger Menu */
-#hamburger-button {
-  display: none; /* Sembunyikan di layar besar */
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.hamburger-icon {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #222;
-  margin: 5px 0;
-}
-
-/* Media Query untuk Responsiveness */
-@media (max-width: 768px) {
-  #hamburger-button {
-    display: block; /* Tampilkan di layar kecil */
-  }
-
-  #menu {
-    display: none; /* Sembunyikan menu */
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 100%; /* Posisikan di bawah navbar */
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    border-top: 2px solid #000;
-  }
-
-  #menu.show {
-    display: flex; /* Tampilkan menu ketika tombol diklik */
-  }
-
-  header nav li {
-    margin: 10px 0;
-  }
-}
-
