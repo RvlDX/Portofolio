@@ -192,3 +192,23 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+/* Contact Form */
+#contact .form-group {
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
