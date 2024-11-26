@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Portofolio - John Doe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <div class="container">
-            <h1>Nama Saya</h1>
+            <h1>John Doe</h1>
             <nav>
                 <ul>
                     <li><a href="#about">Tentang</a></li>
@@ -23,7 +24,8 @@
     <section id="about">
         <div class="container">
             <h2>Tentang Saya</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec enim vitae justo pellentesque lacinia. Donec euismod, nisl eget ullamcorper bibendum, sem erat aliquet elit, eget tincidunt odio velit sed lorem.</p>
+            <p>Saya seorang web developer yang bersemangat dengan desain dan teknologi. Saya memiliki pengalaman dalam membangun website responsif dan user-friendly dengan HTML, CSS, dan JavaScript. Saya selalu tertarik untuk mempelajari hal baru dan mengembangkan skill saya.</p>
+            <p>Saya memiliki ketertarikan pada desain minimalis dan neobrutalisme. Saya percaya bahwa desain yang sederhana dan fungsional adalah kunci untuk menciptakan pengalaman pengguna yang baik.</p>
         </div>
     </section>
 
@@ -32,16 +34,21 @@
             <h2>Proyek</h2>
             <div class="project-grid">
                 <div class="project">
-                    <img src="project1.jpg" alt="Proyek 1">
-                    <h3>Proyek 1</h3>
-                    <p>Deskripsi singkat tentang proyek 1.</p>
+                    <img src="images/project1.jpg" alt="Proyek 1">
+                    <h3>Website Company Profile</h3>
+                    <p>Membangun website company profile untuk perusahaan startup di bidang teknologi.</p>
                 </div>
                 <div class="project">
-                    <img src="project2.jpg" alt="Proyek 2">
-                    <h3>Proyek 2</h3>
-                    <p>Deskripsi singkat tentang proyek 2.</p>
+                    <img src="images/project2.jpg" alt="Proyek 2">
+                    <h3>Landing Page Aplikasi Mobile</h3>
+                    <p> Mendesain dan mengembangkan landing page untuk aplikasi mobile di bidang kesehatan.</p>
                 </div>
+                <div class="project">
+                    <img src="images/project3.jpg" alt="Proyek 3">
+                    <h3>Website E-commerce</h3>
+                    <p>Mengembangkan website e-commerce untuk toko online yang menjual produk fashion.</p>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -49,15 +56,18 @@
         <div class="container">
             <h2>Kontak</h2>
             <form action="#" method="post">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" required></textarea>
-
+                <div>
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
                 <button type="submit">Kirim</button>
             </form>
         </div>
@@ -65,10 +75,9 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Nama Saya</p>
+            <p>&copy; 2023 John Doe</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
