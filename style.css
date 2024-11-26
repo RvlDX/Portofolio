@@ -1,12 +1,13 @@
 /* Gaya Neobrutalisme */
 body {
-    font-family: monospace; /* Gunakan font monospace */
+    font-family: monospace; 
     background-color: #f0f0f0; 
 }
 
 .container {
-    border: 2px solid black; /* Berikan border tebal */
+    border: 2px solid black; 
     padding: 20px;
+    margin-bottom: 20px; /* Tambahkan jarak antar container */
 }
 
 h1, h2, h3 {
@@ -14,16 +15,44 @@ h1, h2, h3 {
 }
 
 a {
-    color: blue; /* Warna mencolok untuk link */
+    color: blue; 
     text-decoration: underline;
 }
 
 /* Warna-warni */
 .bg-primary {
-    background-color: #FF6347 !important; /* Contoh warna */
+    background-color: #FF6347 !important; 
 }
 
 .bg-secondary {
-    background-color: #4682B4 !important; /* Contoh warna */
+    background-color: #4682B4 !important; 
 }
 
+/* Styling untuk tombol */
+.btn {
+    border: 2px solid black !important; /* Border tebal */
+    font-weight: bold;
+    padding: 15px 30px; /* Perbesar padding */
+    display: block; /* Buat tombol memenuhi lebar container */
+    margin-bottom: 10px; /* Tambahkan jarak antar tombol */
+    text-align: center; /* Pusatkan teks di dalam tombol */
+}
+
+/* Contoh warna untuk tombol */
+.btn-primary {
+    background-color: #3498db !important; 
+}
+
+.btn-secondary {
+    background-color: #2ecc71 !important;
+}
+
+.btn-info {
+    background-color: #9b59b6 !important;
+}
+
+/*  Hilangkan dekorasi link di dalam tombol */
+.btn a {
+    text-decoration: none; 
+    color: white; /* Warna teks putih di dalam tombol */
+}
