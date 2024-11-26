@@ -199,15 +199,47 @@ footer {
   border-top: 2px solid #000;
 }
 
+/* Hamburger Menu */
+#hamburger-button {
+  display: none; /* Sembunyikan di layar besar */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #222;
+  margin: 5px 0;
+}
+
 /* Media Query untuk Responsiveness */
 @media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column; /* Ubah jadi vertikal */
-    align-items: center; /* Pusatkan item */
+  #hamburger-button {
+    display: block; /* Tampilkan di layar kecil */
+  }
+
+  #menu {
+    display: none; /* Sembunyikan menu */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%; /* Posisikan di bawah navbar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 2px solid #000;
+  }
+
+  #menu.show {
+    display: flex; /* Tampilkan menu ketika tombol diklik */
   }
 
   header nav li {
-    margin: 10px 0; /* Atur margin atas-bawah */
+    margin: 10px 0;
   }
 }
 
