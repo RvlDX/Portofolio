@@ -1,20 +1,21 @@
 /* Global Styles */
 body {
-    background-color: #111; /* Warna dasar gelap */
-    color: #fff; /* Warna teks */
     margin: 0;
+    padding: 0;
+    background-color: #000; /* Konsisten gelap */
+    color: #fff; /* Warna teks putih */
     font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #222; /* Warna navbar */
+    background-color: #000; /* Pastikan warna gelap */
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #007bff; /* Warna biru border */
+    border-bottom: 3px solid #007bff; /* Garis biru di bawah navbar */
 }
 
 .navbar .logo {
@@ -25,71 +26,49 @@ body {
 }
 
 .navbar .menu-icon {
-    width: 32px;
-    height: 32px;
-    background-color: #444; /* Warna ikon menu */
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #333; /* Warna ikon menu */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    border: 1px solid #fff;
 }
 
-/* Content Section */
-.content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.content .skill-box {
-    background-color: #000; /* Warna background box */
-    color: #fff;
+/* Konten Kotak Skill */
+.skill-box {
+    background-color: #111; /* Warna dasar kotak gelap */
+    color: #fff; /* Teks putih */
+    border: 1px solid #333; /* Border abu-abu gelap */
+    border-radius: 5px;
     padding: 15px 20px;
-    width: 90%;
+    margin: 10px auto;
     max-width: 400px;
     text-align: center;
-    border: 2px solid #444; /* Border box */
-    border-radius: 4px;
     font-size: 1rem;
     font-weight: bold;
 }
 
-/* Footer or Other Sections */
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 2px solid #007bff;
-}
-
-/* Dark Mode and Light Mode */
+/* Mode terang */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #fff; /* Warna terang */
+        background-color: #fff;
         color: #000;
     }
+
     .navbar {
         background-color: #f5f5f5;
         color: #000;
-        border-bottom: 2px solid #007bff;
+        border-bottom: 3px solid #007bff;
     }
+
     .menu-icon {
         background-color: #ddd;
-        border: 1px solid #000;
+        border: 2px solid #000;
     }
-    .content .skill-box {
+
+    .skill-box {
         background-color: #fff;
         color: #000;
-        border: 2px solid #ddd;
-    }
-    footer {
-        background-color: #f5f5f5;
-        color: #000;
-        border-top: 2px solid #007bff;
+        border: 1px solid #ddd;
     }
 }
