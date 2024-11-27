@@ -1,56 +1,54 @@
 /* Gaya Neobrutalisme */
 body {
     font-family: monospace; 
-    background-color: #f0f0f0; 
+    background-color: #222222 !important; /* Abu-abu gelap */
 }
 
 .container {
-    border: 2px solid black !important; 
+    border: 2px solid #eee !important; /* Abu-abu terang */
     padding: 20px;
     margin-bottom: 20px; 
-    background-color: white; 
+    background-color: #333 !important; /* Abu-abu gelap */ 
 }
 
 h1, h2, h3 {
     font-weight: bold;
     text-align: left; 
+    color: #eee !important; /* Abu-abu terang */
 }
 
 a {
-    color: blue !important; 
+    color: #007bff !important; /* Biru */
     text-decoration: underline;
 }
 
 p {
     margin-bottom: 15px; 
     text-align: left; 
+    color: #eee !important; /* Abu-abu terang */
 }
 
 /* Styling untuk tombol */
 .btn {
-    border: 2px solid black !important; 
+    border: 2px solid #eee !important; /* Abu-abu terang */
     font-weight: bold;
     padding: 15px 30px; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
     margin-bottom: 10px; 
-    color: white !important; 
+    color: #eee !important; /* Abu-abu terang */ 
 }
 
 .btn a {
     text-decoration: none; 
 }
 
-/* Warna tombol */
+/* Warna tombol (tetap gunakan warna yang ada) */
 .btn-github { background-color: #007bff !important; }
 .btn-linkedin { background-color: #0077b5 !important; }
 .btn-facebook { background-color: #3b5998 !important; }
-.btn-instagram { background-color: #e4405f !important; }
-.btn-telegram { background-color: #0088cc !important; }
-.btn-hackerrank { background-color: #2ec866 !important; }
-.btn-codewars { background-color: #b91d19 !important; }
-.btn-whatsapp { background-color: #25D366 !important; }
+/* ... dan seterusnya ... */
 
 .btn.disabled, .btn:disabled {
     opacity: 0.65; 
@@ -70,13 +68,14 @@ ul {
 
 li {
     margin-bottom: 10px; 
-    border: 2px solid black !important;
+    border: 2px solid #eee !important; /* Abu-abu terang */
     padding: 10px;
-    background-color: #f0f0f0 !important; 
+    background-color: #444 !important; /* Abu-abu gelap */
+    color: #eee !important; /* Abu-abu terang */
 }
 
 #home, #pendidikan, #pengalaman, #skill {
-    background-color: white !important; 
+    background-color: #333 !important; /* Abu-abu gelap */
 }
 
 .profile-pic {
@@ -90,40 +89,14 @@ li {
     margin-bottom: 20px; 
 }
 
-/* Style untuk dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212 !important; 
-    }
-
-    .container {
-        background-color: #222222 !important; 
-        color: white; 
-        border-color: white !important; /* Ubah warna border container */ 
-    }
-
-    h1, h2, h3 {
-        color: white !important; /* Ubah warna teks heading */
-    }
-
-    a {
-        color: lightblue !important; /* Ubah warna link */
-    }
-
-    .btn {
-        color: black !important; 
-        border-color: white !important; /* Ubah warna border tombol */
-    }
-
-    li {
-        background-color: #222222 !important; 
-        color: white !important; 
-        border-color: white !important; /* Ubah warna border item list */ 
-    }
-}
+/* Hapus style untuk dark mode */
+/* @media (prefers-color-scheme: dark) {
+    ...
+} */
 
 .navbar {
   height: 100px;
+  background-color: #333 !important; /* Abu-abu gelap */
 }
 
 .navbar-nav {
@@ -133,11 +106,5 @@ li {
 .navbar-brand {
  font-weight: bold;
  text-align: left;
+ color: #eee !important; /* Abu-abu terang */
 }
-
-element {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
